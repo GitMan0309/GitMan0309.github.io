@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIF Showcase</title>
+    <style>
+        /* 기본 스타일 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* 전체 페이지 중앙 정렬 및 반응형 설정 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        /* GIF 이미지 스타일 */
+        .gif-container img {
+            width: 100%;
+            max-width: 500px; /* GIF의 최대 크기 */
+            height: auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <h1>GIF Showcase</h1>
-    <img src="exploding-car-explode.gif" alt="Sample GIF" style="width:100%; max-width:500px;">
+    <div class="gif-container">
+        <h1 style="text-align: center; margin-bottom: 20px;">GIF Showcase</h1>
+        <img src="exploding-car-explode.gif" alt="Sample GIF">
+    </div>
 </body>
 </html>
